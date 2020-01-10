@@ -211,6 +211,7 @@ header nav a {
 }
 .intro .intro-text {
   width: 42.5%;
+  border-bottom: dashed silver;
 }
 .intro h3 {
   font-size: 3rem;
