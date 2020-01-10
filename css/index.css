@@ -174,11 +174,6 @@ header nav {
   align-items: center;
   padding: 1%;
 }
-@media (max-width: 500px) {
-  header nav {
-    flex-direction: column;
-  }
-}
 header nav .fun-bus-text {
   margin-right: 10%;
 }
@@ -190,11 +185,6 @@ header nav a {
   color: black;
   font-size: 16px;
   padding: 1.5%;
-}
-@media (max-width: 500px) {
-  header nav a {
-    flex-direction: row-reverse;
-  }
 }
 .footer {
   width: 100%;
@@ -302,6 +292,12 @@ header nav a {
   .home .content-pick {
     flex-direction: column;
     align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 90%;
+  }
+  .home .content-pick .btn {
+    width: 90%;
   }
 }
 .home .content-pick .destination {
