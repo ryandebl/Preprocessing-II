@@ -1,6 +1,8 @@
 // Navigation Styles here
 
 header {
+
+    
     
 
     nav {
@@ -8,10 +10,11 @@ header {
         justify-content: center;
         align-items: center;        
         padding: 1%;
-
+        
         @media @mobile {
-            align-items: center;
+            flex-direction: column;
         }
+        
 
         .fun-bus-text {
             margin-right: 10%;
@@ -26,7 +29,12 @@ header {
             text-decoration: none;
             color: black;
             font-size: 16px;  
-            padding: 1.5%;        
+            padding: 1.5%;
+            
+            @media @mobile {
+                flex-direction: row-reverse;
+            
+        }
         }
     }
 }

@@ -10,7 +10,7 @@
 
   .intro-text {   
     width: 42.5%;
-    border-bottom: dashed silver;
+    border-bottom: 2px dashed @navigation-border;
         
   }
   h3 {
@@ -20,7 +20,7 @@
 
   
   .bus-img {
-    border-top: dashed silver;  
+    border-top: 2px dashed @navigation-border;  
     padding-bottom: 1%; 
     
     
@@ -30,6 +30,7 @@
 .bus {
   width: 80%;
   margin-left: 10%;
+
 }
 
 
@@ -44,39 +45,46 @@
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
-    @media @mobile {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    
+    justify-content: space-between;     
+      
+      
+  }   
    
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
-    }
+      padding-right: 1%;      
+      }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
+      padding-left: 1%;    
 
       img {
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 5%;
+
+      .text-content {
+        width: 90%;
+      }
+
+      .img-content {
+        width: 90%;
+      }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    @media @mobile {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
+    
+    
 
     .text-content {
       padding-left: 1%;
@@ -86,6 +94,19 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+      flex-direction: column-reverse;      
+      flex-wrap: nowrap;
+
+      .text-content {
+        width: 90%;
+      }
+
+      .img-content {
+        width: 90%;
+      }
     }
   }
 
@@ -106,8 +127,8 @@
 
     @media @mobile {
       flex-direction: column;
-      align-items: center;
-      width: 100%;
+      align-items: center;          
+      
     }
 
     .destination {
