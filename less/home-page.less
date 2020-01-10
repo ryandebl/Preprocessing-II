@@ -10,6 +10,7 @@
 
   .intro-text {   
     width: 42.5%;
+        
   }
   h3 {
     font-size: 3rem;
@@ -43,7 +44,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
+    
    
     
     .text-content {
@@ -64,6 +72,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -90,6 +102,12 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
     .destination {
       width: 30%;
